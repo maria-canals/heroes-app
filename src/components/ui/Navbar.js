@@ -3,6 +3,8 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { AuthContext } from '../../auth/AuthContext';
 import { types } from '../../types/types';
 
+import './Navbar.css';
+
 export const Navbar = () => {
 	const { push } = useHistory();
 
@@ -20,8 +22,8 @@ export const Navbar = () => {
 	};
 
 	return (
-		<nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
-			<div className='navbar-collapse'>
+		<nav className='navbar navbar-expand'>
+			<div className='navbar'>
 				<div className='navbar-nav mx-4'>
 					<NavLink
 						activeClassName='active'
@@ -50,9 +52,13 @@ export const Navbar = () => {
 			</div>
 
 			<div className='navbar-collapse collapse w-100 order-3 dual-collapse2'>
-				<ul className='navbar w-100 align-items-end'>
-					<span className='nav-item nav-link text-info mt-3'>{name}</span>
-					<button className='nav-item nav-link btn mx-4' onClick={handleLogout}>
+				<ul className='navbar w-100 align-items-end mt-1'>
+					<span className='nav-item nav-link text-info mt-1'>
+						User name: {name.toUpperCase()}
+					</span>
+					<button
+						className='nav-item nav-link btn mx-4 logout-btn'
+						onClick={handleLogout}>
 						Logout
 					</button>
 				</ul>

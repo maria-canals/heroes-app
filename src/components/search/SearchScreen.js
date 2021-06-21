@@ -5,6 +5,8 @@ import queryString from 'query-string';
 import { getHeroeByName } from '../../selectors/getHeroeByName';
 import { useMemo } from 'react';
 
+import './SearchScreen.css';
+
 export const SearchScreen = () => {
 	const { push } = useHistory();
 	const [formValues, handleInputChange] = useForm({
@@ -24,11 +26,10 @@ export const SearchScreen = () => {
 	const heroeFiltered = useMemo(() => getHeroeByName(q), [q]);
 
 	return (
-		<div>
-			<h1>Search Screen</h1>
-			<div className='row'>
-				<div className='col-3 mt-4'>
-					<h4>Search Form</h4>
+		<div className='my-5'>
+			<h1 className='my-3'>Search</h1>
+			<div className='search-container'>
+				<div className='my-5'>
 					<form onSubmit={handleSearch}>
 						<input
 							type='text'
@@ -41,12 +42,12 @@ export const SearchScreen = () => {
 						/>
 						<button
 							type='submit'
-							className='btn m-1 btn-block btn-outline-primary mt-2'>
+							className='btn m-1 btn-block btn-outline-primary mt-4'>
 							Search
 						</button>
 					</form>
 				</div>
-				<div className='col-9 mt-4'>
+				<div className=' mt-2'>
 					<h4>Results</h4>
 
 					{q === '' && (

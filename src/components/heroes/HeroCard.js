@@ -12,7 +12,7 @@ export const HeroCard = ({
 	publisher,
 }) => {
 	return (
-		<div className='col'>
+		<div className='m-2'>
 			<Link to={`./hero/${id}`} className='my-card'>
 				<img
 					// src={`./assets/heroes/${id}.jpg`}

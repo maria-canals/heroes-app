@@ -1,0 +1,24 @@
+.navbar {
+	background-color: rgb(16, 21, 94);
+	height: 70px;
+}
+
+.nav-item {
+	color: white;
+}
+
+.logout-btn {
+	background-color: rgb(133, 179, 231);
+	color: black;
+}
+
+.logout-btn:hover {
+	background-color: rgb(192, 218, 243);
+	color: black;
+}
+
+@media (max-width: 526px) {
+	.navbar {
+		height: 130px;
+	}
+}

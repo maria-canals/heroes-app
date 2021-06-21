@@ -1,0 +1,16 @@
+.search-container {
+	display: flex;
+	flex-direction: column;
+}
+
+form {
+	min-width: 200px;
+}
+
+@media (min-width: 768px) {
+	.search-container {
+		display: grid;
+		grid-template-columns: 40% 40%;
+		column-gap: 50px;
+	}
+}

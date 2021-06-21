@@ -3,8 +3,8 @@ import { HeroList } from '../heroes/HeroList';
 
 export const DcScreen = () => {
 	return (
-		<div>
-			<h1>DcScreen</h1>
+		<div className='my-5'>
+			<h1 className='my-5'>DC</h1>
 			<HeroList publisher='DC Comics' />
 		</div>
 	);
