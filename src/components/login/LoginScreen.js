@@ -12,7 +12,7 @@ export const LoginScreen = props => {
 		dispatch({
 			type: types.login,
 			payload: {
-				name: 'Marisita',
+				name: 'Maria',
 			},
 		});
 

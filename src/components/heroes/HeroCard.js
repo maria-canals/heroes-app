@@ -26,8 +26,8 @@ export const HeroCard = ({
 					<div className='profile-overview'>
 						<div className='row'>
 							<div className='col-ms-4'>
-								<h3>{publisher}</h3>
-								<p>
+								<h3 className='profile_publisher'>{publisher}</h3>
+								<p className='profile_first_appearance'>
 									Primera aparición: <br />
 									{first_appearance}
 								</p>

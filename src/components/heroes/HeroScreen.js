@@ -48,9 +48,10 @@ export const HeroScreen = () => {
 						<b>First appearance: </b>
 						{first_appearance}
 					</li>
+					<br />
 				</ul>
-				<h5>Characters</h5>
-				<p>{characters}</p>
+				<h5 className='characters_title mt-3'>Characters</h5>
+				<p className='list-group-item'>{characters}</p>
 
 				<button className='btn btn-outline-info' onClick={handleReturn}>
 					Return
